@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-accent: orange;
+    --text-color-main: black;
+    --text-color-light: white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+span {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 8rem;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-top: 0.5em;
+}
+
+h4 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: var(--color-accent);
+}
+
+p {
+    line-height: 1.7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content,
+.navbar {
+    border: 1px solid red;
+    padding: 0 7%;
+}
+
+.content {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.content__left {
+    width: 50%;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    position: fixed;
+}
+
+
+.btn {
+    padding: 0.5em 1em;
+    border-radius: 10%;
+    background-color: var(--color-accent);
+    color: var(--text-color-light);
+
+}
+
+
+/* NAV */
+
+.navbar {
+    width: 100%;
+}
+.navbar__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__list > li {
+    margin: 1em 2em;
+}
+
+/* FIRST SECTION */
+.welcome {
+    background-image: url('/images/fruit.jpg');
+    background-size: cover;
+    padding-top: 10vh;
+    
+}
+
+.welcome h1 {
+    margin-top: 2em;
+}
+
+.welcome__form {
+    font-size: 2rem;
+    margin: 1em 0;
+}
+
+.welcome__form > input {
+    width: 70%;
+    border-radius: 1em 0 0 1em;
+    border: none;
+    height: 4rem;
+}
+
+.welcome__socials {
+    font-size: 2rem;
+    margin: 2em 0;
+}
+
+/* SECOND SECTION */
+.about {
+    display: flex;
+    justify-content: center;
+    background-image: url(/images/pies.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.about__text {
+    max-width: 50%;
+    margin: auto;
+}
+
+.about .btn {
+    position: relative;
+    top: 1em;
+}
+
+/* THIRD SECTION */
+.speciality__nav {
+    width: 40%;
+}
+.speciality__nav > ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding: 1.5em;
+}
+
+.speciality__gallery {
+    width: 60%;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 5vw);
+
+}
+
+.grid-item {
+    border: 1px solid red;
+
+}
+
+/* FOURTH SECTION */
+.hours {
+    background-image: url(/images/coffee.jpg);
+
+}
+
+.hours__highlight {
+    color: var(--color-accent);
+}
+
+.hours__open {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hours__img {
+    /* width: 80%; */
+}
