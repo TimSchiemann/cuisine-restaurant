@@ -59,7 +59,7 @@ ul {
 
 .content,
 .navbar {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 0 7%;
 }
 
@@ -142,7 +142,8 @@ h4,
 .about {
     display: flex;
     justify-content: center;
-    background-image: url(../images/pies.jpg);
+    background-image: url('../images/pies.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 1));
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -150,7 +151,7 @@ h4,
 .about__text {
     max-width: 50%;
     margin: auto;
-    background: linear-gradient(rgba(0, 0, 0, 1))
+
 }
 
 .about .btn {
@@ -159,6 +160,9 @@ h4,
 }
 
 /* THIRD SECTION */
+.speciality {
+    background: linear-gradient(rgba(231, 233, 232, 0.5), rgba(187, 191, 194, 0.8))
+}
 .speciality__nav {
     width: 40%;
 }
@@ -178,17 +182,33 @@ h4,
 }
 
 .grid-item {
-    border: 1px solid red;
     width: calc(25% - 2em);
-    height: 300px;
+    height: 250px;
     margin: 1em;
+}
+
+.grid-item > img {
+    height: 100%;
 }
 
 /* FOURTH SECTION */
 .hours {
-    background-image: url(../images/coffee.jpg);
+    background-image: url('../images/coffee.jpg');
     background-size: cover;
-    background-position: 0;
+    background-position: top;
+}
+
+.hours__phone{
+    width: 6em;
+    height: 6em;
+    margin: 1em 0 2em 0;
+    border: 2px solid var(--color-accent);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+.hours__call > a {
+    color: inherit;
 }
 
 .hours__highlight {
@@ -206,21 +226,44 @@ h4,
 }
 
 /* FIFTH SECTION */
+.testimonials {
+
+}
+
 .testimonials__review {
     text-align: center;
     width: 70%;
 }
 
+.testimonials__user {
+    font-family: 'Roboto', sans-serif;
+}
 .testimonials__user-img {
     width: 12%;
-    margin: 3em 0 1em 0;
+    margin: 3em 0;
 }
 .testimonials__user-img > img{
     border-radius: 50%;
 }
 
+.testimonials__name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.testimonials__job {
+    font-size: 1.5rem;
+    color: grey;
+}
+
 .testimonials__stars {
-    border: 1px solid red;
-    height: 100px;
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-star {
+    color: var(--color-accent);
+    margin: .3em;
+    margin-top: 1.2em;
 }
